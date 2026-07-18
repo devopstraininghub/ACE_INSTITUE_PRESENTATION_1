@@ -29,8 +29,8 @@
   
 - Basic Vim/Vi Editor
   - `Esc - I `  (Insert your data) 
-  - `:wq` (Save & Exit)
-  - `:q!` (Exit Without Saving)
+  - `Esc :wq` (Save & Exit)
+  - `Esc :q!` (Exit Without Saving)
 
 ---
 
