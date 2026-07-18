@@ -42,27 +42,8 @@
 | `du -h` | File size in human-readable format |
 | `free` | Show memory and swap usage |
 
-**`who -r`** — displays the current run level (`init 0`–`6`):
 
-| Run level | Meaning |
-|---|---|
-| 0 | Halt / stop |
-| 1 | Single-user mode |
-| 2 | Multi-user, no network |
-| 3 | Multi-user, with network |
-| 4 | Unused |
-| 5 | Multi-user, with GUI |
-| 6 | Reboot |
 
-### Network commands
-
-| Command | Description |
-|---|---|
-| `ping google.com` | Check connectivity between two nodes |
-| `whois domain` | Get WHOIS information for a domain |
-| `dig domain` | Get DNS information for a domain |
-| `wget url` | Download a file |
-| `netstat` | Display connection information |
 
 ### Compression commands
 
