@@ -5,7 +5,7 @@
 
 | Command | Description |
 |---|---|
-| `sudo su -` | Switching ec2 user to root user |
+| `sudo su -` | Switching  root user |
 | `touch filename` | Create the file |
 | `mkdir dirname` | Create the directory |
 | `ls` | Directory / files listing |
