@@ -163,9 +163,9 @@ Instead of executing multiple `docker run` commands, everything is defined in on
 Without Docker Compose
 
 ```bash
-docker run mysql
-docker run nginx
-docker run redis
+docker run frontendimg
+docker run backendimg
+docker run db_image
 ```
 
 Difficult to manage multiple containers.
