@@ -25,8 +25,10 @@
   - `tail`
   - `tail -n`
   - `du -sh`
+  -`du -sh`
+  
 - Basic Vim/Vi Editor
-  - `Esc`
+  - `Esc - I `  (Insert your data) 
   - `:wq` (Save & Exit)
   - `:q!` (Exit Without Saving)
 
