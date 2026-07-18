@@ -1,3 +1,215 @@
+# DevOps Training Notes
+
+**Date:** **17 July 2026**
+
+---
+
+# Linux Basics
+
+- Introduction to Linux
+- Basic Linux Commands
+  - `touch`
+  - `mkdir`
+  - `pwd`
+  - `cd`
+  - `cd ..`
+  - `ls`
+  - `ll`
+  - `ls -la`
+  - `ls -lrth`
+  - `cp`
+  - `mv`
+  - `rm -rf`
+  - `cat`
+  - `head`
+  - `tail`
+  - `tail -n`
+  - `du -sh`
+- Basic Vim/Vi Editor
+  - `Esc`
+  - `:wq` (Save & Exit)
+  - `:q!` (Exit Without Saving)
+
+---
+
+# Docker Basics
+
+- What is Docker?
+- Why Docker?
+- Virtualization vs Containerization
+- Docker Architecture
+- Docker Desktop Installation
+- WSL Installation
+- Docker Hub
+- Pull Docker Images
+- Run Docker Containers
+- Create Docker Hub Account
+
+### Common Commands
+
+```bash
+docker version
+docker info
+docker images
+docker pull <image>
+docker run -d <image>
+docker ps
+docker ps -a
+docker stop <container>
+docker rm <container>
+docker rmi <image>
+docker login
+```
+
+---
+
+# Python Application
+
+- Run Python Application (Manual)
+- Access in Browser
+- Dockerize Application
+- Create Dockerfile
+- Build Docker Image
+- Run Docker Container
+- Access in Browser
+- Push Image to Docker Hub
+- Pull & Run Image in Another Environment
+
+### Commands
+
+```bash
+python app.py
+
+docker build -t python-app .
+
+docker run -d -p 5000:5000 python-app
+
+docker tag python-app <username>/python-app:v1
+
+docker push <username>/python-app:v1
+
+docker pull <username>/python-app:v1
+```
+
+---
+
+# Apache2 Application
+
+- Run Apache2 (Manual)
+- Access in Browser
+- Dockerize Apache2
+- Build Docker Image
+- Run Docker Container
+- Access in Browser
+- Push Image to Docker Hub
+- Pull & Run Image in Another Environment
+
+### Commands
+
+```bash
+sudo apt install apache2
+
+sudo systemctl start apache2
+
+docker build -t apache-app .
+
+docker run -d -p 8080:80 apache-app
+
+docker tag apache-app <username>/apache-app:v1
+
+docker push <username>/apache-app:v1
+
+docker pull <username>/apache-app:v1
+```
+
+---
+
+# Docker Features
+
+## Port Mapping
+
+```bash
+docker run -p HOST_PORT:CONTAINER_PORT <image>
+```
+
+Example
+
+```bash
+docker run -d -p 8080:80 nginx
+```
+
+---
+
+## Volume Mapping
+
+```bash
+docker run -v HOST_PATH:CONTAINER_PATH <image>
+```
+
+Example
+
+```bash
+docker run -d -v /home/user/data:/var/www/html nginx
+```
+
+---
+
+## Docker Networking
+
+```bash
+docker network create mynetwork
+
+docker network ls
+
+docker network inspect mynetwork
+
+docker network rm mynetwork
+```
+
+Run Container in Network
+
+```bash
+docker run -d --network mynetwork mysql
+
+docker run -d --network mynetwork wordpress
+```
+
+---
+
+# Quick Revision
+
+## Linux
+
+- Linux Commands
+- Vim Editor
+
+## Docker
+
+- Images
+- Containers
+- Docker Hub
+- Dockerfile
+
+## Applications
+
+- Python
+- Apache2
+
+## Docker Concepts
+
+- Port Mapping
+- Volume Mapping
+- Networking
+
+---
+
+
+
+
+
+
+
+
 # Docker, Docker Compose & Kubernetes (K8s) Notes
 
 # YAML Basics
